@@ -108,4 +108,4 @@ SITEMAP = {
 
 ## Github URL for fork ribbon
 ## Only used on theme site, not personal blog
-GITHUB_URL = 'https://github.com/mamcmanus'
+GITHUB_URL = 'https://github.com/mamcmanus/brutalistpelican'

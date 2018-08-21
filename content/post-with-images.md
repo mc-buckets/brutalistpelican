@@ -7,4 +7,4 @@ tags: images
 
 ![Unsplash Wilderness photo]({filename}/images/wilderness.jpg "Wilderness") 
 
-I highly recommended using the [optimize_images]("https://github.com/getpelican/pelican-plugins/tree/master/optimize_images") plugin. 
+I highly recommended using the [optimize_images](https://github.com/getpelican/pelican-plugins/tree/master/optimize_images) plugin. 

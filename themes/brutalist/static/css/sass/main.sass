@@ -1,0 +1,355 @@
+/************************
+ *
+ *Brutal Pelican Theme for mamcmanus.com
+ *© 2018 Matt McManus
+ *
+ ***********************
+ */
+
+/* MIXINS */
+@import pygment.sass
+@import mixins.sass
+@import reset.sass
+/* END MIXINS */
+
+/* VARIABLES */
+$color-primary: #232a2e
+$color-secondary: #39739d
+$color-third: #E1ECF4
+$color-gray: #abb4b9
+$fonts: 'Lato', sans-serif
+/* END VARIABLES */
+
+/* BASE STYLES */
+body
+  font-family: 'Lato', sans-serif
+
+.page
+  max-width: 42.5em
+  /* 680/16 = 42.5 */
+  margin: 0 auto
+  text-align: center
+  line-height: 1.5
+  @include breakpoint(medium)
+    padding-left: 14em
+  @include breakpoint(large)
+    padding-left: 5em
+
+a
+  text-decoration: none
+  color: $color-primary
+  &:hover
+    color: $color-secondary
+/* END BASE STYLES */
+
+/* NAVIGATION */
+div#masthead
+  width: 95%
+  margin: auto
+
+nav#menu
+  clear: both
+  -webkit-transition: all 0.3s ease-out  
+  -moz-transition: all 0.3s ease-out
+  -ms-transition: all 0.3s ease-out
+  -o-transition: all 0.3s ease-out
+  transition: all 0.3s ease-out
+  overflow: hidden
+  max-height: 0
+  @include breakpoint(medium)
+    max-width: 7em
+    float: left
+    padding-left: 2em
+
+  &#menu.active
+    max-height: 15em
+    padding: 2em 0
+
+  ul
+    margin: 0
+    padding: 0
+    border-top: 1px solid #808080
+    @include breakpoint(medium)
+      margin: 0 0 0 -0.25em
+      border: 0
+  
+  @include breakpoint(medium)
+    max-height: none
+    padding-left: 2em
+    li 
+      display: inline-block
+      margin: 0 0.25em
+      float: left
+      padding-right: 2em
+      font-weight: 400
+      font-size: 1.2em
+      padding-top: 1.1em
+      padding-left: 1.1em
+
+  li a
+    display: block
+    padding: 0.8em
+    border-bottom: 1px solid #808080
+    @include breakpoint(medium)
+      border: 0
+  
+a.menu-link
+  float: right
+  display: block
+  padding: 1em
+  line-height: 4em
+  font-size: 1.2em
+  @include breakpoint(medium)
+    display: none
+   
+
+.logo-container
+  max-width: 7em
+  float: left
+  padding-left: .5em
+  padding-top: 1em
+  @include breakpoint(medium)
+    max-width: 10em
+    display: inline-block
+    padding-left: 1.5em
+    padding-top: 1.5em
+  h1
+    font-size: 1.25em
+    text-align: left
+    padding-top: 1em
+    line-height: 2em
+    @include breakpoint(medium)
+      padding-left: 1.9em
+      margin: 0 .25em
+      padding-top: 1.5em
+      line-height: 4.4em
+  
+.logo-container img
+  display: block
+  width: 100%
+  height: auto
+/* END NAVIGATION */
+
+/* FOOTER */
+footer
+  margin-bottom: 2em
+  margin-top: 2em 
+  p
+    color: $color-gray
+/* END FOOTER STYLES */
+
+/* ARTICLES */
+.articles
+  text-align: left
+  padding: 1.5em
+  ol li
+    padding-bottom: 4em
+    padding-top: 1em
+  @include breakpoint(small) 
+    padding: 2em
+    padding-top: 4.25em
+  article
+    line-height: 2em
+    footer
+      padding-bottom: .25em
+      margin-bottom: 0
+      margin-top: 0
+    header
+      padding-bottom: 1em
+      h2
+        font-size: 2em
+        line-height: 1.3em
+    .summary
+      padding-bottom: 1em
+      font-size: 1.125em
+      font-weight: 100
+    .readmore
+      color: $color-secondary
+      float: right
+      text-decoration: underline
+    .tags
+      list-style: none
+      margin: 0
+      overflow: hidden
+      padding: 0
+      li
+        float: left
+        padding: 0
+/* END ARTICLES */
+
+/* ARTICLE */
+.article 
+  img
+    max-width: 100%
+    @include center-block
+  article
+    display: inline-block
+    width: 85%
+    /* results in ~60-70 characters per line */
+    text-align: left
+    line-height: 1.75
+    padding-top: 6em
+    /* Article published date*/
+    footer
+      margin-bottom: 0
+      margin-top: 0
+      p
+        text-align: center 
+    /*Article Header */
+    header
+      .project-header-logo
+        padding-bottom: 4em
+      h2
+        font-size: 2em
+        /* 32/16 = 2*/
+        padding-bottom: 1em
+        font-weight: 900
+        text-align: center
+    /* Article content styles */
+    .content
+      font-size: 1.125em
+      /* 18/16 = 1.125 */
+      font-weight: 300
+      a
+        text-decoration: underline
+      p
+        padding-bottom: 1.5em
+      /* article headers */
+      h2
+        font-size: 1.4em
+        padding-bottom: .75em
+        padding-top: 1.5em
+        font-weight: 900        
+      h3
+        font-size: 1.2em
+        padding-bottom: .75em
+        padding-top: 1.5em
+        font-weight: 900
+      h4
+        font-size: 1em
+        padding-bottom: 1.25em
+        padding-top: 1em
+        font-weight: 900
+      /* article lists */
+      ul, ol
+        width: 85%
+        margin: 0 auto
+        line-height: 2
+        padding-bottom: 2em
+      ul
+        list-style-type: square
+      ol
+        list-style-type: decimal
+      /* italics */
+      em
+        font-style: italic
+        font-size: .8em
+      /* code blocks */
+      .highlight
+        margin-bottom: 1.5em
+      pre
+        padding-bottom: 1.75em
+        padding-top: 1em
+        display: block
+        background-color: #f5f5f5
+        border: 1px solid rgba(0, 0, 0, 0.15)
+        border-radius: .25em
+        padding: .5em
+        white-space: pre-wrap
+        white-space: -moz-pre-wrap
+        white-space: -pre-wrap
+        white-space: -o-pre-wrap
+        word-wrap: break-word
+
+      span.nv
+        color: #c65d09
+        font-weight: 900
+
+      span.article-masthead-icon
+        display: none
+
+      .embedded-tweet
+        margin-top: 1em
+        margin-bottom: 2em
+
+.back-to-top
+  padding-top: 2em
+  text-align: center
+  margin-bottom: 6em
+  margin-top: 2em
+  a
+    font-size: 1.5em
+    /* 24/16=1.5 */
+    font-weight: 900
+    text-decoration: underline
+/* END ARTICLE */
+
+/* TAGS */
+.tag
+  background: $color-third
+  border-radius: 3px
+  color: $color-secondary
+  display: inline-block
+  height: 2em
+  line-height: 2em
+  padding: 0 1em
+  position: relative
+  margin: 0 1em 1em 0
+  text-decoration: none
+  -webkit-transition: color 0.2s
+  &:hover
+    background-color: crimson
+    color: white
+    &::after
+      border-left-color: crimson
+
+.category-tag
+  font-style: italic
+  color: $color-secondary
+  text-decoration: underline
+/* END TAGS */
+
+/* PAGINATION */
+.paginator
+  font-size: 3em
+  text-align: center
+  span
+    font-size: .5em
+  a.previous
+    float: left
+  a.next
+    float: right
+/* END PAGINATION */
+
+/* TAGS/CATEGORIES */
+.page-title
+  border-bottom: 2px solid black
+  margin: 0 2em
+  h1
+    font-size: 3em
+    padding-bottom: .75em
+    padding-top: 1.5em
+    text-align: left
+.count
+  float: right
+/* TAGS/CATEGORIES */
+
+/* SOCIAL ICONS */
+.icon
+  width: 2em
+  height: 2em
+  display: inline-block
+  padding: 0 .5em 
+
+.icons
+  margin: 2em auto
+
+/* DISQUS COMMENTS */
+#disqus_thread
+  margin-bottom: 10em
+
+/* GRAVATARS */
+.gravatar
+  border-radius: 50%
+  max-width: 70%
+  margin: auto

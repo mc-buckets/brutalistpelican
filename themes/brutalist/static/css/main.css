@@ -663,8 +663,6 @@ footer p {
 /* GRAVATARS */
 .gravatar {
   border-radius: 50%;
-  max-width: 70%;
-  margin: auto;
 }
 
 /* END GRAVATARS */

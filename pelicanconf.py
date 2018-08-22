@@ -80,7 +80,7 @@ FOURSQUARE = 'https://foursquare.com/mcman_s'
 UNTAPPD = 'https://untappd.com/user/mcman_s'
 ## Disqus Sitename for comments on posts
 ## Commenting mine out for this theme site
-# DISQUS_SITENAME = 'mamcmanus'
+DISQUS_SITENAME = 'brutalistpelican'
 ## Gravatar
 ## Commenting mine out so you can see how the theme looks without one
 ## See https://mamcmanus.com to see what it looks like with a Gravatar
@@ -109,3 +109,4 @@ SITEMAP = {
 ## Github URL for fork ribbon
 ## Only used on theme site, not personal blog
 GITHUB_URL = 'https://github.com/mamcmanus/brutalistpelican'
+GITHUB_POSITION = 'left'

@@ -40,6 +40,7 @@
     <article>
       {% if page.date %}
         <footer>
+            <a name="top"></a>
             <p>
               <time datetime=" {{ page.date }}">
                 <script>document.write(moment('{{ page.date }}').format('LL'));</script>
@@ -56,15 +57,19 @@
          {{ page.content|safe }}
       </div>
       <div class="back-to-top">
-          <a href="#masthead">back to top</a>
+          <a href="#top">back to top</a>
       </div>
       {% if DISQUS_SITENAME %}
       <div id="disqus_thread"></div>
-      <script>
-        // var disqus_config = function () {
-        // this.page.url = "{{ SITEURL }}/{{ page.url }}";  // Replace PAGE_URL with your page's canonical URL variable
-        // this.page.identifier = "{{ page.slug }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        // };
+        {% if SITEURL %}
+        <script>
+          var disqus_config = function () {
+          this.page.url = "{{ SITEURL }}/{{ article.url }}";  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = "{{ article.slug }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+        </script>
+        {% endif %}
+        <script>
         (function() {
               var d = document, s = d.createElement('script');
               s.src = 'https://{{ DISQUS_SITENAME }}.disqus.com/embed.js';

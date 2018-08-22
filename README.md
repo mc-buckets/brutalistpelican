@@ -20,7 +20,8 @@ When I decided to get back into blogging, I knew that wanted a site that was sup
 
 ## Features
 * Clean, readable, accessible, and fast theme
-* W3C validates
+* Mobile first
+* W3C validated
 * Clean slugified URLs
 * Easy to extend and customize to your liking
 * SEO optimized w/ OG tags and Twitter Card support
@@ -86,7 +87,7 @@ FOURSQUARE = 'https://foursquare.com/mcman_s'
 UNTAPPD = 'https://untappd.com/user/mcman_s'
 ## Disqus Sitename for comments on posts
 ## Commenting mine out for this theme site
-# DISQUS_SITENAME = 'mamcmanus'
+DISQUS_SITENAME = 'brutalistpelican'
 ## Gravatar
 ## Commenting mine out so you can see how the theme looks without one
 ## See https://mamcmanus.com to see what it looks like with a Gravatar
@@ -125,5 +126,6 @@ Some design and tooling choices I made while building this theme. Feedback welco
 * Same thing for the footer icons. I used one of my favorite tools, [Grumpicon](http://www.grumpicon.com/), to properly package the fonts. I did not introduce the entire Grumpicon JS toolchain since it seems complex and I really just needed a handful of icons.
 * I designed in SASS instead of CSS, mostly for the same reasons I [outlined a few years ago](https://mamcmanus.com/2016/01/14/switching-from-css-to-sass/). 
 * For date and time display I am using [moment.js](https://momentjs.com/). I've been using this script for years because it is easy to get the dates and times looking exactly how you want.
+* I attempted to get the tag design as close to Stack Overflow as possible.
 
 Contributions, ideas, and general chat welcome. Feel free to reach out on Twitter or Telegram. I'll be working to add more features over the coming months.

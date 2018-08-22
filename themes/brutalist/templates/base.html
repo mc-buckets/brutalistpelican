@@ -59,7 +59,7 @@
             
             function initMenu(){
                 var menu = document.getElementById("menu");
-                var menulink = document.getElementsByClassName("menu-link")[0];
+                var menulink = document.getElementById("menu-link");
                 menulink.addEventListener("click", function toggleMenu(){
                         window.event.preventDefault();
                         menulink.classList.toggle('active');
@@ -74,16 +74,14 @@
     {% block header %}
     <div role="banner" id="masthead">
         <header>
-            <div class="logo-container">
-                {% if GRAVATAR %}
-                <a href="/"><img src="{{ GRAVATAR }}" alt="Matt McManus Avatar" class="gravatar"></a>
-                {% elif LOGO %}
-                <a href="/"><img src="{{ SITEURL }}/images/{{ LOGO }}" alt="McManus Logo"></a>
-                {% else %}
-                <h1><a href="/">{{ FIRST_NAME }}'s Blog</a></h1>
-                {% endif %}
-            </div>
-            <a href="#menu" class="menu-link">more stuff</a>
+            {% if GRAVATAR %}
+            <a href="/"><img src="{{ GRAVATAR }}" alt="Matt McManus Avatar" class="gravatar"></a>
+            {% elif LOGO %}
+            <a href="/"><img src="{{ SITEURL }}/images/{{ LOGO }}" alt="McManus Logo"></a>
+            {% else %}
+            <h1><a href="/">{{ FIRST_NAME }}'s Blog</a></h1>
+            {% endif %}
+            <a href="#menu" id="menu-link">more stuff</a>
             <nav id="menu">
                 <ul>
                     {% if DISPLAY_PAGES_ON_MENU %}

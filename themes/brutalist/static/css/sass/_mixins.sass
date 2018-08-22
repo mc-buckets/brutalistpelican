@@ -1,4 +1,8 @@
 @mixin breakpoint($point)
+  @if $point == full
+    @media (min-width: 75em) 
+      @content 
+
   @if $point == large
     @media (min-width: 65em) 
       @content 

@@ -260,45 +260,80 @@ section, article, header, footer, nav, aside, hgroup {
 /* END MIXINS */
 /* VARIABLES */
 /* END VARIABLES */
-/* BASE STYLES */
+/* FONTS */
 body {
   font-family: "Lato", sans-serif;
 }
 
+/* END FONTS */
+/* MAIN CONTENT CONTAINER */
 .page {
   max-width: 42.5em;
   /* 680/16 = 42.5 */
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
   line-height: 1.5;
 }
 @media (min-width: 55em) {
   .page {
-    padding-left: 14em;
+    padding-left: 30%;
   }
 }
 @media (min-width: 65em) {
   .page {
-    padding-left: 5em;
+    padding-left: 20%;
+  }
+}
+@media (min-width: 75em) {
+  .page {
+    padding-left: 0;
   }
 }
 
+/* END MAIN CONTENT CONTAINER */
+/* LINKS */
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #232a2e;
 }
 a:hover {
   color: #39739d;
 }
 
-/* END BASE STYLES */
+/* END LINKS */
 /* NAVIGATION */
-div#masthead {
-  width: 95%;
-  margin: auto;
+div#masthead img {
+  display: inline-block;
+  max-width: 20%;
+  padding: 1em;
+  height: auto;
 }
-
-nav#menu {
+@media (min-width: 37.5em) {
+  div#masthead img {
+    max-width: 10%;
+  }
+}
+@media (min-width: 55em) {
+  div#masthead img {
+    display: block;
+    max-width: 60%;
+    padding: 0;
+  }
+}
+@media (min-width: 65em) {
+  div#masthead img {
+    max-width: 50%;
+  }
+}
+@media (min-width: 55em) {
+  div#masthead {
+    position: fixed;
+    max-width: 20%;
+    padding-left: 4em;
+    padding-top: 5%;
+  }
+}
+div#masthead nav#menu {
   clear: both;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -309,55 +344,42 @@ nav#menu {
   max-height: 0;
 }
 @media (min-width: 55em) {
-  nav#menu {
-    max-width: 7em;
-    float: left;
-    padding-left: 2em;
+  div#masthead nav#menu {
+    max-height: none;
+    padding-top: 15%;
+  }
+  div#masthead nav#menu li {
+    display: block;
+    font-weight: 400;
+    font-size: 1.2em;
   }
 }
-nav#menu#menu.active {
+div#masthead nav#menu#menu.active {
   max-height: 15em;
   padding: 2em 0;
 }
-nav#menu ul {
-  margin: 0;
-  padding: 0;
+div#masthead nav#menu ul {
   border-top: 1px solid #808080;
+  text-align: center;
 }
 @media (min-width: 55em) {
-  nav#menu ul {
-    margin: 0 0 0 -0.25em;
+  div#masthead nav#menu ul {
     border: 0;
+    text-align: left;
   }
 }
-@media (min-width: 55em) {
-  nav#menu {
-    max-height: none;
-    padding-left: 2em;
-  }
-  nav#menu li {
-    display: inline-block;
-    margin: 0 0.25em;
-    float: left;
-    padding-right: 2em;
-    font-weight: 400;
-    font-size: 1.2em;
-    padding-top: 1.1em;
-    padding-left: 1.1em;
-  }
-}
-nav#menu li a {
+div#masthead nav#menu li a {
   display: block;
   padding: 0.8em;
+  text-decoration: none;
   border-bottom: 1px solid #808080;
 }
 @media (min-width: 55em) {
-  nav#menu li a {
+  div#masthead nav#menu li a {
     border: 0;
   }
 }
-
-a.menu-link {
+div#masthead a#menu-link {
   float: right;
   display: block;
   padding: 1em;
@@ -365,44 +387,9 @@ a.menu-link {
   font-size: 1.2em;
 }
 @media (min-width: 55em) {
-  a.menu-link {
+  div#masthead a#menu-link {
     display: none;
   }
-}
-
-.logo-container {
-  max-width: 7em;
-  float: left;
-  padding-left: 0.5em;
-  padding-top: 1em;
-}
-@media (min-width: 55em) {
-  .logo-container {
-    max-width: 10em;
-    display: inline-block;
-    padding-left: 1.5em;
-    padding-top: 1.5em;
-  }
-}
-.logo-container h1 {
-  font-size: 1.25em;
-  text-align: left;
-  padding-top: 1em;
-  line-height: 2em;
-}
-@media (min-width: 55em) {
-  .logo-container h1 {
-    padding-left: 1.9em;
-    margin: 0 0.25em;
-    padding-top: 1.5em;
-    line-height: 4.4em;
-  }
-}
-
-.logo-container img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 /* END NAVIGATION */
@@ -425,7 +412,7 @@ footer p {
   padding-bottom: 4em;
   padding-top: 1em;
 }
-@media (min-width: 37.5em) {
+@media (min-width: 55em) {
   .articles {
     padding: 2em;
     padding-top: 4.25em;
@@ -441,6 +428,9 @@ footer p {
 }
 .articles article header {
   padding-bottom: 1em;
+}
+.articles article header a {
+  text-decoration: none;
 }
 .articles article header h2 {
   font-size: 2em;
@@ -511,9 +501,6 @@ footer p {
   /* article lists */
   /* italics */
   /* code blocks */
-}
-.article article .content a {
-  text-decoration: underline;
 }
 .article article .content p {
   padding-bottom: 1.5em;
@@ -591,7 +578,6 @@ footer p {
   font-size: 1.5em;
   /* 24/16=1.5 */
   font-weight: 900;
-  text-decoration: underline;
 }
 
 /* END ARTICLE */
@@ -680,5 +666,7 @@ footer p {
   max-width: 70%;
   margin: auto;
 }
+
+/* END GRAVATARS */
 
 /*# sourceMappingURL=main.css.map */

@@ -64,8 +64,8 @@
         {% if SITEURL %}
         <script>
           var disqus_config = function () {
-          this.page.url = "{{ SITEURL }}/{{ article.url }}";  // Replace PAGE_URL with your page's canonical URL variable
-          this.page.identifier = "{{ article.slug }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          this.page.url = "{{ SITEURL }}/{{ page.url }}";  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = "{{ page.slug }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
           };
         </script>
         {% endif %}

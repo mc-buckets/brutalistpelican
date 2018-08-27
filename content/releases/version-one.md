@@ -6,10 +6,10 @@ cover_image: images/site-cover.jpg
 ![Brutalist Pelican Theme]({filename}/images/site-cover.jpg "Brutalist Pelican Theme") 
 
 ## Background and Inspiration 
-When I decided to get back into blogging, I knew that wanted a site that was super simple and readable. There are many great Pelican themes out there but I couldn't quite find what I was looking for. After reading David Bryant Copeland's [Brutalist Web Design](https://brutalist-web.design/) a few weeks ago, I was inspired to try and apply those design principles to a Pelican theme. The goal of this theme is to be feature-rich while also accessible and fast. This release is just 1.0. I'll be adding more features as I shake off the front-end coding rust. 
+When I decided to get back into blogging, I knew that I wanted a site that was super simple and readable. There are many great Pelican themes out there but I couldn't quite find what I was looking for. After reading David Bryant Copeland's [Brutalist Web Design](https://brutalist-web.design/) a few weeks ago, I was inspired to try and apply those design principles to a Pelican theme. The goal of this theme is to be feature-rich while also accessible and fast. This release is just 1.0. I'll be adding more features as I shake off the front-end coding rust. 
 
 ## Features
-* Clean, readable, accessible, and fast theme
+* Clean, readable, accessible, and fast
 * Mobile first
 * W3C validated
 * Clean slugified URLs

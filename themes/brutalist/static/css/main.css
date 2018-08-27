@@ -666,5 +666,14 @@ footer p {
 }
 
 /* END GRAVATARS */
+/* EMOJIS */
+img.emoji {
+  margin: 0;
+  vertical-align: -0.3em;
+  display: inline;
+  padding-right: 0.5em;
+}
+
+/* END EMOJIS */
 
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,7 @@
 title: Version 1.0 of 'Brutalist' released!
 date: 2018-08-22
 summary: I'm excited to release the first version of the Pelican theme I've been working on. This post contains all the details you need to get up and running. For those interested, I also listed some of the tools I used to build the theme along with some of my design rationale, which may be helpful if you are looking to extend the theme and make it your own.
-cover_image: images/site-cover.jpg
+cover_image: site-cover.jpg
 
 ![Brutalist Pelican Theme]({filename}/images/site-cover.jpg "Brutalist Pelican Theme") 
 

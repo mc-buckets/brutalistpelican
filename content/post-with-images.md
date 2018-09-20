@@ -1,6 +1,6 @@
 title: A post with images
 date: 2018-08-21
-summary: This a simple post that shows how images with appear if you use this theme.
+description: This a simple post that shows how images with appear if you use this theme.
 tags: images
 
 ## HEADER 

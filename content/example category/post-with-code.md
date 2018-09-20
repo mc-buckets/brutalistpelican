@@ -1,6 +1,6 @@
 title: A post with code blocks
 date: 2018-08-21
-summary: This a simple post that shows how code blocks will appear. Code blocks word wrap at smaller breakpoints. Syntax highlighting is supported via Pygments. Happy coding!
+description: This a simple post that shows how code blocks will appear. Code blocks word wrap at smaller breakpoints. Syntax highlighting is supported via Pygments. Happy coding!
 tags: code, syntax, python 
 
 ## Python Code block

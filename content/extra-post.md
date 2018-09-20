@@ -1,6 +1,6 @@
 title: An extra post
 date: 2018-08-21
-summary: This a post containing gibberish. Only used to show what pagination looks like.
+description: This a post containing gibberish. Only used to show what pagination looks like.
 
 ## HEADER 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis erat imperdiet, sollicitudin ligula id, sollicitudin mauris. Praesent malesuada lorem sed lectus lacinia, nec elementum nunc fermentum. Mauris quis mollis velit. Etiam tempus porta felis, sed vulputate nisi efficitur a. Quisque efficitur neque non enim venenatis, a porttitor felis tristique. Aenean et bibendum lorem. Quisque eget leo ut neque tristique aliquam id ut justo. Maecenas iaculis nulla vel tellus tristique blandit.

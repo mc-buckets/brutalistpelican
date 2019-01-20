@@ -54,4 +54,3 @@ blog.code-workspace
 *.exe
 *.o
 *.so
-plugins/category_order
